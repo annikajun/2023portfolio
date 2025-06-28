@@ -1,0 +1,99 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: peachpuff;
+}
+
+body{
+    background-color: peachpuff;
+}
+
+.AboveContactDetails{
+    background-color:rgb(230, 195, 165) !important;
+}
+
+.Header{
+    text-align: center;
+    background-color: rgb(198, 163, 132) !important;
+}
+
+.Header a{
+    color: black;
+    text-decoration: none;
+}
+
+.Header:hover a{
+    color: rgb(230, 195, 165);
+}
+
+.Information{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(230, 195, 165);
+}
+
+.ContactDetails {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(230, 195, 165);
+}
+
+.name{
+    font-weight: bold;  
+}
+
+.tel{
+    font-weight: bold;
+}
+
+.email{
+    font-weight: bold;
+}
+
+.location{
+    font-weight: bold;
+}
+
+.BelowContactDetails{
+    background-color:rgb(230, 195, 165) !important;
+}
+
+.brown{
+   background-color: rgb(198, 163, 132);
+   border:  none;
+   margin-left: 50px;
+}
+
+.brown:hover {
+    background-color:  rgb(155, 131, 109);
+}
+
+.mainDIV{
+    margin-left: 30px;
+}
+
+.BasicColumns{
+    display: flex;
+    gap: 30px;
+}
+
+h6 {
+    font-weight: bolder;
+}
+
+a{
+  color:  rgb(134, 111, 91);  
+}
+
+.Projects:hover a{
+    color: black  
+}

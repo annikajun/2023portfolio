@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang = "en" >
+
+<head>
+    <meta charset="UTF-8">
+    <title>Annika's report</title>
+    <!-- stylesheet link-->
+    <link rel="stylesheet" type ="text/css" href="CSS/stylesheet_report.css">
+</head>
+
+<body>
+    <h3>CS4082 Report </h3>
+    <h5>by Annika Jungfleisch (22359923)</h5>
+    <hr>
+    <br>
+    <!-- my report here -->
+    <div class="report">
+    My website showcases my personal information, previous courses I took, previous work experiences and projects I have worked on.
+    The goal of this assignment was to have a website that can be used as my personal portfolio.
+    To the main webpage, I linked a second webpage I created that list all my skills in detail.
+    <br> When first opening this website, you will be asked to input your name and organisation, This information will be stored in the cookies.
+    <br>Below the websites title, 'Annika's Portfolio', is the Information section that includes my contact details.
+    <br> This section includes my full name, my phone number (I might have rearranged the numbers), my email address and my current location.
+    <br> Below that is my so called Selection Bar. This includes an introduction to the different parts of my portfolio website.
+    <p> 1. Education </p>
+    This part displays three courses I took last semester when its corresponding button is pressed.
+    <p> 2. Work experience </p>
+    This part displays three work experiences of mine. I included my most recent work experiences. Similar to the Education display, a button click is needed to reveal this information.
+    <p> 3. Projects </p>
+    Upon clicking the corresponding button, it displays one of my three projects. All of which were created within this module.
+    <br> The first two are parts of Assignment 1, where as the third project is a Lab Assignment from Week 04.
+    <br> Clicking either of those buttons will reveal a section below that I called MainDiv. 
+    <br> Below it is a clear button that will make the section disappear again. Next to it is a suprise button that will make a random project appear and rotate between them every 30 sec. This can be stopped by clicking the Stop button.
+    <br> Second to last, is a log out button that will bring you to google.com and delete the saved cookies.
+    <br> Lastly, is a link to this report.
+
+    <br>
+    <h4> IMAGES: </h4>
+    All of my images are screenshots from webpages I have created. I retrieved all of them on April 2nd 2023.
+    <br>
+    <h4> OUTSIDE RESOURCES: </h4>
+    Below is the list of code that I copied from outside resources like <a href="https://www.w3schools.com">W3Schools</a>, <a href="https://stackoverflow.com">Stock Overflow</a> and <a href="https://getbootstrap.com">Bootstrap</a>. 
+    This includes the code from my HTML, CSS and JavaScript files. The specific part of the website from where I took the code is linked to the website's name.
+    <br>
+    <br> INDEX AND SKILL PAGE:
+    <br> 1. From <a href="https://getbootstrap.com/docs/5.3/components/dropdowns/#menu-items">Bootstrap</a>
+    <br> I used the Menu items example for my code.
+    <div class="code">
+    <xmp> 
+        <div class="btn-group">
+            <button class="btn brown btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+            My Skills
+            </button>
+            <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="mySkills.html#Basic">Basic Skills</a></li>
+            <li><a class="dropdown-item" href="mySkills.html#Communication">Communication Skills</a></li>
+            <li><a class="dropdown-item" href="mySkills.html#Teamwork">Teamwork Skills</a></li>
+            <li><a class="dropdown-item" href="mySkills.html#Problem">Problem Solving & Analytics Skills</a></li>
+            <li><a class="dropdown-item" href="mySkills.html#Initiative">Using Initiative</a></li>
+            <li><a class="dropdown-item" href="mySkills.html#Projects">Projects/Portfolio/Volunteering </a></li>
+            <li><a class="dropdown-item" href="mySkills.html#Additional">Additional</a></li>
+            </ul>
+        </div>
+    </xmp></div>
+    <br> 
+    <br> INDEX PAGE:
+    <br> 1. From <a href="https://stackoverflow.com/questions/2906582/how-do-i-create-an-html-button-that-acts-like-a-link">Stack Overflow</a>
+    <div class="code">
+    <xmp> 
+        <form action="https://google.com">
+            <input type="submit" value="Log Out" onclick="deleteCookieRefreshFinal();" />
+        </form>
+    </xmp></div>
+    <br>
+    <br> JAVASCRIPT:
+    <br> 1. From Lab Assignment Week 09
+    <div class="code">
+        <xmp> 
+            // sets cookies
+            function setCookie(cname, cvalue, exminutes) {
+                var d = new Date();
+                d.setTime(d.getTime() + (exminutes * 60 * 1000));
+                var expires = "expires="+d.toUTCString();
+               document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+            }
+            
+            // gets cookies
+            function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for(var i = 0; i <ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+            }
+            
+            // loads cookies input text field
+            function checkCookie(){
+                var user = getCookie("username");
+                var organisation = getCookie("organisation");
+                if (user != "" && organisation != "") {
+                } else {
+                    user = prompt ("Please enter your name:", "");
+                    organisation = prompt ("Please enter your organisation:", "");
+                    if (user != "" && user != null && organisation != "" && organisation != null) {
+                        setCookie("username", user, 60); //defines minutes
+                        setCookie("organisation", organisation, 60);
+                    }
+                }
+            }
+            
+            //deletes cookies
+            function deleteCookie() {
+                setCookie("username", "", -1);
+                setCookie("organisation", "", -1);
+            }  
+            
+            function deleteCookieRefresh() {
+                deleteCookie();
+            }
+            
+            function deleteCookieRefreshFinal () {
+                deleteCookie();
+            }
+        </xmp></div>
+        <br> 2. From <a href="https://www.tutorialstonight.com/display-json-data-in-html-page">Tutorials Tonight</a>
+        <div class="code">
+        <xmp>
+            //gets JSON file
+            function showData(){
+                fetch("JSON/Education.json")
+                // converts json file to a useful data type
+                    .then(response => response.json()) 
+                    .then(data => createEduList(data));
+                fetch("JSON/WorkExperience.json")
+                // converts json file to a useful data type
+                    .then(response => response.json()) 
+                    .then(data => createWorkList(data));
+                fetchProjects();  
+            }
+
+            [...]
+
+            //gets JSON file
+            function fetchProjects() {
+                fetch("JSON/Projects.json")
+                // converts json file to a useful data type
+                    .then(response => response.json()) 
+                    .then(data => createProjectsList(data));
+            }
+        </xmp></div>
+        <br> 3. From <a href="https://www.tutorialstonight.com/display-json-data-in-html-page">Tutorials Tonight</a>
+        <br> I use this webpage for a second part of my code.
+        <div class="code">
+        <xmp>
+            //Education Display
+            function createEduList(data) {
+                const eduUL = document.createElement('ol'); //creating a list (displaying json in a list format)
+            
+                for (let i = 0; i <data.education.length; i++) { 
+                    // Create Course element
+                    const courseLI = document.createElement('li');
+                    courseLI.innerHTML = data.education[i].course; 
+            
+                    // Add semester to course element
+                    const semesterUL = document.createElement('ul');
+                    const semesterLI = document.createElement('li');
+                    semesterLI.innerHTML = data.education[i].semester;  
+                    semesterUL.appendChild(semesterLI);
+            
+                    // Add semester to courseLI
+                    courseLI.appendChild(semesterUL);
+                    // Append course list to eduUL
+                    eduUL.appendChild(courseLI);
+                }
+                // Add mainUL to educationDisplay
+                document.getElementById("educationDisplay").appendChild(eduUL); //when button is clicked, json is displayed
+            }
+
+            //Work Experience Display 
+            function createWorkList(data) {
+                const workUL = document.createElement('ol'); //creating a list (displaying json in a list format)
+
+                for (let i = 0; i <data.workExperience.length; i++) { 
+                    // Create company element
+                    const companyLI = document.createElement('li');
+                    companyLI.innerHTML = data.workExperience[i].company;  
+
+                    // Add dates to company element
+                    const datesUL = document.createElement('ul');
+                    const datesLI = document.createElement('li');
+                    datesLI.innerHTML = data.workExperience[i].dates;  
+                    datesUL.appendChild(datesLI);
+
+                    // Add dates to companyLI
+                    companyLI.appendChild(datesUL);
+
+                    // Append company list to workUL
+                    workUL.appendChild(companyLI);
+                }
+                // Add mainUL to workDisplay
+                document.getElementById("workDisplay").appendChild(workUL); //when button is clicked, json is displayed
+            }
+
+            Projects Display
+            function createProjectsList(data) {
+                const projectsUL = document.createElement('ul');
+
+            [...]
+
+            // Create title element for the current project
+            const titleLI = document.createElement('li');
+            titleLI.innerHTML = data.projects[currentProjectIndex].title;
+
+            // Add year to title element
+            const yearUL = document.createElement('ul');
+            const yearLI = document.createElement('li');
+            yearLI.innerHTML = data.projects[currentProjectIndex].year;
+            yearUL.appendChild(yearLI);
+            titleLI.appendChild(yearUL);
+            
+            // Add summary to title element
+            const summaryUL = document.createElement('ul');
+            const summaryLI = document.createElement('li');
+            summaryLI.innerHTML = data.projects[currentProjectIndex].summary;
+            summaryUL.appendChild(summaryLI);
+            titleLI.appendChild(summaryUL);
+
+            // Add link to title element;
+            const aTag = document.createElement('a');
+            aTag.innerHTML = 'Link to my website';
+            aTag.setAttribute('href', data.projects[currentProjectIndex].link);
+            aTag.setAttribute('target', '_blank');
+            titleLI.appendChild(aTag);
+
+            // Add image to title element
+            const imageUL = document.createElement('ul');
+
+            [...]
+
+            //Add image to imageUL
+            imageUL.appendChild(imageLI);
+            //Append image list to titleLI
+            titleLI.appendChild(imageUL);
+        
+            // Add description to title element
+            const descriptionUL = document.createElement('ul');
+            descriptionUL.setAttribute('id', 'descriptionUL'); // Add an ID for easy reference
+            const descriptionLI = document.createElement('li');
+            descriptionLI.innerHTML = data.projects[currentProjectIndex].description;
+            descriptionUL.appendChild(descriptionLI);
+            descriptionUL.style.display = "none"; // shows descriptionUL
+        
+            //Append description list to titleLI
+            titleLI.appendChild(descriptionUL);
+        
+            // Add title list to projectsUL
+            projectsUL.appendChild(titleLI);
+        
+            // Add mainUL to projectsDisplay
+            document.getElementById("projectSection").appendChild(projectsUL);
+           }
+        </xmp></div>
+        <br> 4. The next part of code is a combination of codes from multiple webpages.
+        <br> From <a href="https://webdeveloper.com/community/91628-set-innerhtml-image/">Web Developer</a>
+        <br> From <a href="https://webdeveloper.com/community/91940-img-src-as-a-variable/">Web Developer</a>
+        <br> From <a href="https://softauthor.com/javascript-working-with-images/">Soft Author</a>
+        <br> From <a href="https://linuxhint.com/change-image-on-hover-in-javascript/">Linuxhint</a>
+        <div class="code">
+        <xmp>
+        const imageLI = document.createElement("img");
+            imageLI.src = data.projects[currentProjectIndex].image;
+            imageLI.style.width = "50%";
+            imageLI.style.width = "50%";
+
+        // Add event listener for "mouseenter" event on image element
+        imageLI.addEventListener('mouseenter', function() {
+            hover();
+        });
+        // Add event listener for "mouseleave" event on image element
+        imageLI.addEventListener('mouseleave', function() {
+            hover();
+        });
+
+        [...]
+
+        //displays description on mouse hovering
+        function hover() {
+            if (descriptionUL.style.display === "block") {
+                descriptionUL.style.display = "none"; // shows descriptionUL
+            } else {
+                descriptionUL.style.display = "block"; // hides descriptionUL
+            }
+        }
+        </xmp></div>
+        <br> 5. From <a href="https://www.w3schools.com/jsref/met_win_cleartimeout.asp">W3Schools</a>
+        <br> 
+        <div class="code">
+        <xmp>
+        [...]
+            timeoutId = setTimeout(() => { // store the timeout ID
+                surprise(max);
+            }, 30000);
+        }
+        
+        //stops 30 sec random rotation between projects
+        function stop(){
+            clearTimeout(timeoutId); // clear the timeout using the stored timeout ID
+        }
+        </xmp></div>
+    <br>
+    <h4> JAVASCRIPT FUNCTIONS: </h4>
+    Below is the list of functions I produced.
+    <br>
+    <ol type="1">
+    <li>function setCookie(cname, cvalue, exminutes) </li>    
+    <li>function getCookie(cname) </li>    
+    <li>function checkCookie()</li>    
+    <li>function deleteCookie() </li>    
+    <li>function deleteCookieRefresh() </li>    
+    <li>function deleteCookieRefreshFinal() </li>    
+    <li>function showSection(id)</li>    
+    <li>function clearSections()</li>    
+    <li>function showData()</li>    
+    <li>function createEduList(data) </li>    
+    <li>function createWorkList(data) </li>    
+    <li>function createProjectsList(data) </li>    
+    <li>function hover() </li>    
+    <li>function fetchProjects() </li>    
+    <li>function next() </li>    
+    <li>function previous() </li>    
+    <li>function surprise(max) </li>    
+    <li>function stop()</li>    
+    </ol>
+    </div>
+</body>
+</html>

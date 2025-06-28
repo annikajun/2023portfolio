@@ -1,0 +1,140 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: peachpuff;
+}
+
+body{
+    background-color: peachpuff;
+}
+
+.AboveContactDetails{
+    background-color:rgb(230, 195, 165) !important;
+}
+
+.Header{
+    text-align: center;
+    background-color: rgb(198, 163, 132) !important;
+}
+
+.Information{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(230, 195, 165);
+}
+
+.ContactDetails {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(230, 195, 165);
+}
+
+.name{
+    font-weight: bold;  
+}
+
+.tel{
+    font-weight: bold;
+}
+
+.email{
+    font-weight: bold;
+}
+
+.location{
+    font-weight: bold;
+}
+
+.BelowContactDetails{
+    background-color:rgb(230, 195, 165) !important;
+}
+
+.SelectionBar{
+    background-color: rgb(208, 177, 149) ;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.brown{
+   background-color: rgb(198, 163, 132);
+   border:  none;
+   margin-left: 50px;
+}
+
+.brown:hover {
+    background-color:  rgb(155, 131, 109);
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.mainDIV{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.educationDisplay{
+    background-color: rgb(211, 211, 211);
+}
+
+.workDisplay{
+    background-color:rgb(167, 166, 166);
+}
+
+.projectsDisplay{
+    background-color:rgb(255, 235, 204);
+}
+
+.projectButtons{
+    display: flex;
+}
+
+.empty{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.ButtonsBelow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.centerButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BelowSelectionBar{
+    background-color:rgb(230, 195, 165);
+}
+
+.section{
+    display: none;
+}
+
+.report{
+    color: black;
+}
+
+.report:hover{
+    color: rgb(208, 177, 149);
+}

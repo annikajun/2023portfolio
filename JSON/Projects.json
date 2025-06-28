@@ -1,0 +1,30 @@
+
+{
+    "projects": [
+       {
+          "title": "5 Seconds of Summer Home Page",
+          "year": 2023,
+          "summary": "For this project I used my knowledge of HTML, CSS, and Bootstrap to create an index page for the band 5SOS.",
+          "description": "For my midterm in my module CS4082 - Introduction to Web Development I had to create a fully responsive webpage. I always had a problem with their website, so I took this assignment as a chance to try and work out a better design for their site. I took inspiration from the website of Imagine Dragons. Their website is beautifully designed, and the layout changes when the website is resized. This is the Home page. It is supposed to introduce the viewer to the topic of the website, and link to important external websites like the social media accounts.",
+          "link": "Projects/Assignment1_2/index.html",
+          "image": "Images/5SOS Index.png"
+       },
+       {
+          "title": "5 Seconds of Summer Tour Page",
+          "year": 2023,
+          "summary": "For this project I used my knowledge of HTML, CSS, and Bootstrap to create a tour page for the band 5SOS.",
+          "description": "Using HTML, CSS, and Bootstrap to create a fully responsive webpage. For my midterm in my module CS4082 - Introduction to Web Development I had to create a fully responsive webpage. This is the second webpage of this assignment, the Tour page. The Tour page allows the viewer to get an overview of upcoming tour dates and the possibility of buying tickets from an external website, in this case, Ticketmaster.uk. There would be more tour dates on a finished website, but I stopped at four dates as this website should only be a demonstration. As 5SOS is not on tour now, I used old tour dates as an example. ( shows up when the user mouses over the image. )",
+          "link": "Projects/Assignment1_2/tour.html",
+          "image": "Images/5SOS Tour.png"
+       },
+       {
+          "title": "Lab Week 4-5",
+          "year": 2023,
+          "summary":"For this project I used my knowledge of HTML and CSS to create a webpage from my boxifying design.",
+          "description": "Using boxifying and DIVs to create a fully responsive webpage. For the lab assignment in Week 04, I had to recreate a website by first boxifying the design on paper before using DIVs to recreate the website in HTML and CSS. I downloaded common license photos to use for my website.",
+          "link": "Projects/CS4082Week04/week4-5.html",
+          "image": "Images/Week 4.png"
+       }
+    ]
+ }
+ 

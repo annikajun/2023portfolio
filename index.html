@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- bootstrap link-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- javascript link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JavaScript/JavaScript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- stylesheet link-->
+    <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
+
+    <title> Assignment 2</title>
+
+</head>
+
+<body onload="checkCookie()">
+    <div class="Header">
+        <!--Title on top of the page-->
+        <br>
+        <div class="Title">
+            <h1>Assignment 2</h1>
+            <p>last updated April 2023</p>
+        </div>
+        <br>
+    </div>
+    <!--space in between DIVs with text-->
+    <div class="AboveContactDetails"> <br> </div>
+    <!--gives contact information-->
+    <div class="Information">
+        <div class="ContactDetails">
+            <div class="name"> name </div>
+            <div class="fullname"> Annika Jungfleisch</div>
+            <div class="tel"> tel </div>
+            <div class="number"> (083)337 9137 </div>
+            <div class="email"> email </div>
+            <div class="mail"><u> annika.jungfleisch01 at gmail.com </u></div>
+            <div class="location"> location </div>
+            <div class="Limerick"> Limerick </div>
+        </div>
+        <!--Drop down menu to view my skills-->
+        <div class="Skills">
+            <div class="btn-group">
+                <button class="btn brown btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    data-bs-auto-close="true" aria-expanded="false">
+                    My Skills
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="mySkills.html#Basic">Basic Skills</a></li>
+                    <li><a class="dropdown-item" href="mySkills.html#Communication">Communication Skills</a></li>
+                    <li><a class="dropdown-item" href="mySkills.html#Teamwork">Teamwork Skills</a></li>
+                    <li><a class="dropdown-item" href="mySkills.html#Problem">Problem Solving & Analytics Skills</a>
+                    </li>
+                    <li><a class="dropdown-item" href="mySkills.html#Initiative">Using Initiative</a></li>
+                    <li><a class="dropdown-item" href="mySkills.html#Projects">Projects/Portfolio/Volunteering </a></li>
+                    <li><a class="dropdown-item" href="mySkills.html#Additional">Additional</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--end information div-->
+    <!--space in between DIVs with text-->
+    <div class="BelowContactDetails"> <br> </div>
+    <!-- Introduction of Education, Work Experience, and Projects-->
+    <div class="SelectionBar row ">
+        <div class="Education column">
+            <h4>Education</h4>
+            <p>I have taken various courses offered by the University of Limerick.
+                <br>Click below for more information
+            </p>
+            <button onclick="showSection('educationDisplay')">Education</button>
+        </div>
+        <div class="WorkExperience column">
+            <h4>Work Experience</h4>
+            <p> I have experience in many different industries.
+                <br>Click below for more information
+            </p>
+            <br>
+            <button onclick="showSection('workDisplay')">Work Experience</button>
+        </div>
+        <div class="Projects column">
+            <h4>Projects</h4>
+            <p>I have completed multiple projects.
+                <br>Click below for more information.
+            </p>
+            <br>
+            <br>
+            <button onclick="showSection('projectsDisplay')">Projects</button>
+        </div>
+    </div>
+    <!--End of SelectionBar DIV-->
+    <!--Main DIV that appears when on of the display buttons is pressed-->
+    <div class="mainDIV">
+        <div id="educationDisplay" class="educationDisplay section">Education</div>
+        <div id="workDisplay" class="workDisplay section">Work Experience</div>
+        <div id="projectsDisplay" class="projectsDisplay section">
+            <h4>Projects</h4>
+            <br>
+            <div id="projectSection"></div>
+            <div id="projectButtons" class="centerButton">
+                <button id="projects-previous" onclick="previous()">Previous</button>
+                <div class="empty"></div>
+                <button id="projects-next" onclick="next()">Next</button>
+            </div>
+        </div>
+    </div>
+    <!--End of Main DIV-->
+    <br>
+    <!--Buttons-->
+    <div class="ButtonsBelow">
+        <div class="clear centerButton">
+            <button onclick="clearSections()">Clear</button>
+        </div>
+        <div class="SurpriseMe centerButton">
+            <button onclick="var showProjects = false; surprise(3);"> Surprise Me</button>
+        </div>
+        <div class="Stop centerButton">
+            <button onclick="stop()">Stop</button>
+        </div>
+    </div>
+    <!-- End of Buttons-->
+    <br>
+    <!--Log Out-->
+    <div class="BelowSelectionBar centerButton" id="BelowSelectionBar">
+        <form action="https://google.com">
+            <input type="submit" value="Log Out" onclick="deleteCookieRefreshFinal();" />
+        </form>
+    </div>
+    <!--End of Log Out-->
+    <a class="report centerButton" href="report.html">report</a>
+</body>
+
+</html>

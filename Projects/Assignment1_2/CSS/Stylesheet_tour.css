@@ -1,0 +1,195 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap');
+
+*{
+   font-family: "Nanum Gothic Coding";
+}
+
+body {
+   background-color: peachpuff;
+}
+     
+@media only screen and (max-width: 460px) {
+   *{
+     background-color: white;
+   }
+   body{
+      background-color: white;
+    }
+}
+
+.Header{
+   text-align: center;
+   background-color: rgb(198, 163, 132);
+}
+ 
+.Header2{
+   display: flex;
+   position: absolute;
+   gap: 30px;
+   justify-content: flex-start;
+   margin-left: 20px;
+}
+
+.Header2 a {
+   color:black;
+   text-decoration: none;   
+}
+ 
+.Home:hover a {
+   color:  rgb(198, 163, 132);
+}
+
+.Tour:hover a {
+   color: rgb(198, 163, 132);
+}
+
+.Media:hover a {
+   color: rgb(198, 163, 132);
+}
+
+.About:hover a {
+   color: rgb(198, 163, 132);
+}
+
+.Socials{
+   display:flex;
+   justify-content: flex-end;
+   gap: 20px;
+}
+
+.YT .Img_hover{
+   display: none;
+   position: relative;
+}
+
+.YT:hover .Img_hover{
+   display: inline;
+}
+
+.YT:hover .Img{
+   display: none;
+}
+
+.IG .Img2_hover{
+   display: none;
+   position: relative;
+}
+
+.IG:hover .Img2_hover{
+   display: inline;
+}
+
+.IG:hover .Img2{
+   display: none;
+}
+
+.SY .Img3_hover{
+   display: none;
+   position: relative;
+}
+
+.SY:hover .Img3_hover{
+   display: inline;
+}
+
+.SY:hover .Img3{
+   display: none;
+}
+
+.table{
+   width:80%;
+}
+
+.section::before {
+   width: 20px;
+   display: table-column;
+   content: '';
+}
+
+.brown{
+   background-color: rgb(198, 163, 132);
+   border: none;
+   color: black;
+}
+ 
+.brown:hover {
+   background-color: black;
+   color: rgb(198, 163, 132);
+}
+
+.Socials2 {
+   display: flex;
+   gap: 20px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   position: relative;
+   bottom:0;
+   justify-content: center;
+   margin-top: 40px;
+}
+ 
+.YT2 .Img_hover{
+   display: none;
+   position: relative;
+}
+
+.YT2:hover .Img_hover{
+   display: inline;
+}
+
+.YT2:hover .Img{
+   display: none;
+}
+
+.IG2 .Img2_hover{
+   display: none;
+   position: relative;
+}
+
+.IG2:hover .Img2_hover{
+   display: inline;
+}
+
+.IG2:hover .Img2{
+   display: none;
+}
+
+.SY2 .Img3_hover{
+   display: none;
+   position: relative;
+}
+
+.SY2:hover .Img3_hover{
+   display: inline;
+}
+
+.SY2:hover .Img3{
+   display: none;
+}
+
+.Policies{
+   display: flex;
+   align-items: center;
+   gap: 40px;  
+   justify-content: center;
+}
+
+.Policies a{
+   color: black; 
+}
+
+.Privacy:hover a {
+   color: rgb(181, 148, 119);
+}
+
+.Coookie:hover a {
+   color:  rgb(181, 148, 119);
+}

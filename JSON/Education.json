@@ -1,0 +1,16 @@
+{
+  "education": [
+    {
+      "course": "CS4061 - Media Programming",
+      "semester": "Year 01, Semester 01"
+    },
+    {
+      "course": "CS4031 - Introduction to Digital Media",
+      "semester": "Year 01, Semester 01"
+    },
+    {
+      "course": "CS4231 - Graphic Design",
+      "semester": "Year 01, Semester 01"
+    }
+  ]
+}
