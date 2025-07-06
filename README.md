@@ -31,7 +31,7 @@
 <h3 align="center">Portfolio Assignment</h3>
 
   <p align="center">
-    This project is a dynamic portfolio website created for Assignment 2. The goal was to build a responsive, single-page application to serve as an online CV. It highlights my professional and academic background in a clean, interactive format.
+    This project is a dynamic portfolio website created for Assignment 2 for my Interaction Design Degree. The goal was to build a responsive, single-page application to serve as an online CV. It highlights my professional and academic background in a clean, interactive format.
     <br />
     <a href="https://github.com/annikajun/Portfolio_Assignment"><strong>Explore the Portfolio »</strong></a>
   </p>
