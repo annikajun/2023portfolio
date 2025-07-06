@@ -24,8 +24,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/annikajun/Portfolio_2023">
-    <img src="img/about_circle.png" alt="Logo" width="100" height="100">
+  <a href="https://github.com/annikajun/Portfolio_Assignment">
+    <img src="Images/About.png" alt="Logo" width="100" height="100">
   </a>
 
 <h3 align="center">Portfolio Assignment</h3>
@@ -33,7 +33,7 @@
   <p align="center">
     This project is a dynamic portfolio website created for Assignment 2. The goal was to build a responsive, single-page application to serve as an online CV. It highlights my professional and academic background in a clean, interactive format.
     <br />
-    <a href="https://annikajun.github.io/Portfolio_2023"><strong>Explore the Portfolio »</strong></a>
+    <a href="https://github.com/annikajun/Portfolio_Assignment"><strong>Explore the Portfolio »</strong></a>
   </p>
 </div>
 
@@ -58,7 +58,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Potfoilo Image][product-screenshot]](https://annikajun.github.io/Portfolio_2023)
+[![Potfoilo Image][product-screenshot]](https://github.com/annikajun/Portfolio_Assignment)
 
 The site allows users to explore my skills, education, work history, and a gallery of my projects. I used front-end technologies to create an engaging user experience, including dynamic sections that appear on button clicks and a "Surprise Me" feature to randomly display content. This assignment was an excellent opportunity to apply my web development skills to a practical and personal project.
 
@@ -78,7 +78,6 @@ The site allows users to explore my skills, education, work history, and a galle
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-Project Link: [https://github.com/annikajun/Portfolio_2023](https://github.com/annikajun/Portfolio_2023)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -86,7 +85,7 @@ Project Link: [https://github.com/annikajun/Portfolio_2023](https://github.com/a
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[product-screenshot]: img/portfolio23_ss.png
+[product-screenshot]: Images/portfolio_assignment_ss.png
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/annika-jungfleisch
